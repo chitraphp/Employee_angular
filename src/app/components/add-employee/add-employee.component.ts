@@ -1,5 +1,6 @@
 import { Component, OnInit,EventEmitter,Output } from '@angular/core';
 import {Employee} from '../../models/Employee';
+import {EmployeeService} from "../../services/employee.service";
 
 @Component({
   selector: 'app-add-employee',
@@ -11,7 +12,7 @@ export class AddEmployeeComponent implements OnInit {
   empId:number;
   empName:string;
 
-  constructor() { }
+  constructor(private service:EmployeeService) { }
 
   ngOnInit(): void {}
 
@@ -20,7 +21,8 @@ export class AddEmployeeComponent implements OnInit {
       id: this.empId,
       name:this.empName
     }
-    this.addEmployee.emit(employee);
+    // this.service.employeeSevice.push(employee);
+     this.addEmployee.emit(employee);
   }
 
 
