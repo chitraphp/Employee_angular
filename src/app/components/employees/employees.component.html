@@ -1,0 +1,6 @@
+<div> 
+    <app-add-employee class="addEmp " (addEmployee)="addEmployee($event)"> </app-add-employee>
+    <app-employee *ngFor="let employee of employees" [employee]="employee"  class="employee">
+       
+    </app-employee>
+</div>
