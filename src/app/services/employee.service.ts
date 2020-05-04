@@ -5,19 +5,27 @@ import {Employee} from '../models/Employee';
   providedIn: 'root'
 })
 export class EmployeeService {
-  employeeSevice:Employee[]
+  employeeService:Employee[]
 
-  constructor() { }
-  employeeService=[
+  constructor() {this.employeeService=[
     {
-
       id:1,
       name:'chitra'
     },
     {
       id:2,
-      name:'suchi'}
-  ]
+      name:'suchi'
+   },
+   {
+    id:3,
+    name:'Wendy'
+  },
+  {
+    id:4,
+    name:'srini'
+  }
+]
+  
   
   // getEmployees(){
   //   return [
@@ -31,4 +39,4 @@ export class EmployeeService {
   //     }
   //   ]
   //}
-}
+  }}

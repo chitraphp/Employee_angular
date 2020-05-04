@@ -8,6 +8,8 @@ import { EmployeesComponent } from './components/employees/employees.component';
 import { EmployeeComponent } from './components/employee/employee.component';
 import { AddEmployeeComponent } from './components/add-employee/add-employee.component';
 import { HeaderComponent } from './components/layout/header/header.component';
+import { HomeComponent } from './components/home/home.component';
+import { FooterComponent } from './components/layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { HeaderComponent } from './components/layout/header/header.component';
     EmployeesComponent,
     EmployeeComponent,
     AddEmployeeComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

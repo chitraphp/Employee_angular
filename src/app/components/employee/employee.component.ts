@@ -22,9 +22,9 @@ export class EmployeeComponent implements OnInit {
     }
     return classes;
   }
-  onDelete(employee) {
-    console.log(employee.name);
-  }
+  // onDelete(employee) {
+  //   console.log(employee.name);
+  // }
   // addEmployee(newEmployee:Employee){
   //   this.employees.push(newEmployee);
   // }
