@@ -1,0 +1,3 @@
+<p>parent works!</p>
+<app-child #appChild (dataFromChild)="eventFromChild($event)" [userDetails]="user"></app-child>
+<app-employee [dataToEmployee]="appChild.demoTempVar"></app-employee>>

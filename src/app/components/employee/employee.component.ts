@@ -10,6 +10,7 @@ import { Employee } from 'src/app/models/Employee';
 export class EmployeeComponent implements OnInit {
   @Input() employee:Employee;
   // employees:Employee[];
+  @Input() dataToEmployee:string;
 
   constructor() { }
 
