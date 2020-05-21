@@ -1,0 +1,21 @@
+/* table, tr , td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    }
+    table tr:nth-child(odd) {
+    background-color: #d6f1f8;
+    }
+    table tr:nth-child(even) {
+    background-color: #ffffff;
+    }
+    table {
+        width: 100%;
+
+    }
+
+    td{
+        width:40%
+    } */
+    
