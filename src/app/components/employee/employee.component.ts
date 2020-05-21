@@ -11,6 +11,7 @@ export class EmployeeComponent implements OnInit {
   @Input() employee:Employee;
   // employees:Employee[];
   @Input() dataToEmployee:string;
+  countries:string[]=["india","usa",'china'];
 
   constructor() { }
 

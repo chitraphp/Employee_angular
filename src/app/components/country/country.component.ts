@@ -7,7 +7,7 @@ import { CountryModel } from 'src/app/models/CountryModel';
   styleUrls: ['./country.component.css']
 })
 export class CountryComponent implements OnInit {
-  @Input() country:CountryModel;
+  @Input() country:any=[];
 
   constructor() { }
 

@@ -9,7 +9,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./countries.component.css']
 })
 export class CountriesComponent implements OnInit,OnDestroy {
-  countries:CountryModel[];
+  countries:any=[];
   covidSummary:any=[];
   covidSub:Subscription;
 
@@ -18,11 +18,15 @@ export class CountriesComponent implements OnInit,OnDestroy {
   ngOnInit(): void {
     this.covidSub=  this.covidService.getCovidSummary().subscribe(
       res=>{
-      this.covidSummary=res;      
+      this.covidSummary=res; 
+      this.countries = this.covidSummary.Countries;
+      //console.log(this.countries);     
       res},err=>{console.log(err)});
 
-    this.countries = this.covidSummary.Countries;
+    //this.countries = this.covidSummary.Countries;
+    //console.log(this.countries);     
   }
+  
   
   ngOnDestroy()
    {
